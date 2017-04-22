@@ -1,0 +1,405 @@
+
+/*Override Configuration*/
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 1440px){
+	div.kmprn-side-menu{
+		width:355px
+	}
+	div.close-btn{
+		left:682px;
+		top: -25px;
+	}
+	div#icon-notif-middle img{
+		left: -1px;
+	}
+	span#img_status{
+		left: 170px;
+	}
+	span#img_statistic{
+		left: 157px;
+	}
+	div#dropdowndialogue{
+		left: 482px
+	}
+	div#linkednotif{
+		left: 16px
+	}
+}
+@media screen and (min-width: 1920px){
+	div.kmprn-side-menu{
+		width:482px;
+	}
+	div.close-btn{
+		left:920px;
+		top: -25px;
+	}
+	div#icon-notif-middle img{
+		left: 10px;
+	}
+	span#img_status{
+		left: 265px;
+	}
+	span#img_statistic{
+		left: 253px;
+	}
+	div#linkednotif{
+		left: 96px
+	}
+	div#dropdowndialogue{
+		left: 722px;
+	}
+}
+/*END OF MEDIA QUERIES*/
+
+
+/*BY ID*/
+
+#icon-notif-middle{
+	border-left: 1px solid #e6e6e6;
+	border-right: 1px solid #e6e6e6;
+}
+
+#icon-notif-middle img{
+	position: relative;
+	left: -4px;
+}
+
+#tasks{
+	border-right: 1px solid #e6e6e6;
+}
+#bottom-content{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	border-top: 1px solid #ffffff
+}
+#indent{
+	padding-left: 10px;
+}
+#link-detail{
+	position: relative;
+	top: 5px;
+}
+
+#img_status{
+	left:142px;
+}
+#img_statistic{
+	left: 130px;
+}
+
+#submenu_status{
+	display: none;
+}
+#submenu_statistic{
+	display: none;
+}
+#dropdowndialogue{
+	left: 403px;
+	top: -28px;
+}
+#linkednotif{
+	left: -10px;
+	display: none;
+}
+#footer{
+	margin-top: 15px;
+}
+/*END OF BY ID*/
+
+/*Buttons*/
+li button{
+	background-color: inherit;
+	border: inherit;
+}
+.kmprn-btn{
+  border-radius: 5px;
+  background-color: inherit;
+  border: inherit;
+}
+.kmprn-btn-color{
+  color: white;
+  background-color: #01a5af
+}
+.btn.kmprn-btn-clear{
+  background-color: inherit;
+  border: 1px solid #01a5af;
+}
+/*End of Buttons*/
+
+/*Menus*/
+.kmprn-header{
+  position:relative;
+
+  padding:10px 2px;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 10px #888888;
+  background-color: #ffffff
+}
+.kmprn-side-menu{
+  background-color: #01a5af;
+	width: 315px;
+	/*Dont forget to Add Media Queries*/
+}
+.kmprn-modal{
+	position: fixed;
+	width: 50%;
+	padding: 10px;
+	top:22%;
+	left:27%;
+	z-index: 20000;
+	background: #f2f2f2
+}
+.kmprn-modal-backdrop{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top:0px;
+	left:0px;
+	z-index: 18000;
+	background: rgba(0,0,0,0.3);
+}
+.kmprn-main-body{
+  background-color: #f2f2f2
+}
+.kmprn-task-header{
+  margin: 15px
+}
+.kmprn-task-box{
+  width: 100%;
+  margin: 10px auto;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 15px;
+	max-height: 350px;
+	overflow-y: scroll;
+}
+.no-overflow{
+	max-height: none;
+	height: auto;
+	overflow: hidden;
+}
+
+.kmprn-taskitem{
+	margin-top: 10px;
+}
+
+.side-menu-setting{
+	position: relative;
+	height: 100vh /*Last Resort*/
+}
+.kmprn-dropdown{
+	border-radius: 5px;
+	border-style: none;
+	padding: 3px
+}
+
+.kmprn-dropdown-bubble:before{
+	content:"";
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-bottom: 12px solid #ffffff;
+	top: -10px;
+	left:88px;
+}
+
+.kmprn-dropdown-bubble{
+	background-color: #ffffff;
+	padding: 5px;
+	width:100%;
+	max-width: 150px;
+	box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.5);
+	border-radius: 4px;
+	position:relative;
+	margin-top: 11px;
+	position: absolute;
+	text-align: center;
+	z-index: 10000;
+}
+
+.kmprn-dropdown-bubble:after{
+	content:"";
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-bottom: 12px solid rgba(0,0,0,0.15);
+	top: -12px;
+	left:88px;
+	z-index: -10;
+}
+
+.kmprn-post{
+	padding: 15px;
+	height:60px;
+	overflow: hidden;
+}
+.cutpost{
+	height: 60px;
+}
+.kmprn-comment{
+	margin-left: 10px;
+	top:-15px
+}
+.kmprn-reply{
+	display: none;
+	height: auto
+}
+.kmprn-reply-show{
+	visibility: visible;
+	height: auto
+}
+.postfooter{
+	border-top: 1px solid #e4e4e4;
+	margin-bottom: 15px;
+}
+
+.postfooter div{
+	margin-top: 5px
+}
+.postparent{
+	max-height: 700px;
+	overflow-y: scroll;
+}
+.postparent ul{
+	position: relative;
+	left:-20px
+}
+.filterparent{
+	left: -12px;
+	top: 12px;
+}
+
+/*End of Menus*/
+
+/*Typography*/
+.side-menu-title{
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.side-menu-item{
+  color: white;
+  font-weight: bold;
+  margin: 10px auto;
+	height: auto;
+}
+
+.sub-menu-item{
+  margin: 10px 15px;
+	background-color: #015256
+}
+.sub-menu-item button{
+	color: #7ea7ad
+}
+.taskheader{
+	font-weight: bold;
+}
+.taskheader-edit{
+	color: #01a5af
+}
+.taskitemdetail{
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+.taskdetail{
+	position: relative;
+	top: 10px;
+}
+.date-text{
+	position: relative;
+	font-size: 8px;
+	left:5px;
+	top:-1px;
+}
+.modal-header{
+	text-align: center;
+}
+.modal-info{
+	text-align: center;
+}
+.popupitem{
+	margin: 5px;
+}
+/*End of Typography*/
+
+/*MISC*/
+.kmprn-bdr-left{
+	border-left: 1px solid #e6e6e6
+}
+.menu-border-bottom{
+  border-bottom: 3px solid #00cedb
+}
+ul li{
+	list-style-type: none;
+}
+.searchbar{
+	border-style: none;
+	border-radius: 5px;
+	/*background: url('./icons/icon_search.png') no-repeat;*/
+	padding: 3px 30px;
+	background-color: white;
+	color: black;
+}
+.searchicon{
+	background-image: url('./icons/icon_search.png');
+	background-repeat: no-repeat;
+}
+.searchbar-transparent{
+	background-color: none;
+	border-style: none;
+}
+input.searchbar-transparent active{
+	border-style: none;
+}
+.kmprn-comment-form{
+	border-radius: 5px;
+	background-color: #f2f2f2
+}
+.kmprn-comment-form input{
+	border:none;
+	padding-left: 10px;
+	background-color: inherit;
+	width: 100%;
+}
+.kmprn-comment-form button{
+	margin-top: -5px
+}
+.avatar img{
+	position:relative;
+	top:8px;
+}
+.comment{
+	margin-top: 15px;
+}
+.comment-border{
+	border-left: 5px solid #f8f8f8
+}
+
+button span{
+	position: relative;
+}
+button span img{
+	-webkit-transform:rotate(360deg);
+	transform:rotate(360deg)
+}
+
+p span{
+	position: relative;
+	left: -12px
+}
+.close-btn{
+	position: relative;
+	left: 605px;
+	top:-24px;
+}
+.modalpostcontainer{
+	max-height: 300px;
+	overflow-y: hidden;
+}
+/*End of MISC*/
